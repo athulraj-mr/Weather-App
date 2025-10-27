@@ -1,0 +1,18 @@
+import sunWind from '../assets/image/sun-wind.png'
+
+function Card() {
+    return (
+        <div id="card" className="w-26.5 h-44 flex flex-col items-center justify-center rounded-md
+             border border-[#0000001A] bg-[#252222A6] shadow-[2px_4px_5px_0px_#00000040]">
+            <div id='day' className='w-12.405 h-7.5 top-4 left-7 font-semibold text-2xl leading-6 text-[#FFFFFF]'>Sun</div>
+            <div id="img" className="w-17.5 h-17.5 top-13.25 left-4.5">
+                <img src={sunWind} alt="sun-wind" className='h-fit w-fit'/>
+            </div>
+            <div id='degree' className='w-11.84 h-7.5 top-32.25 left-7.25'>
+                <span className='font-semibold text-2xl leading-6 text-[#FFFFFF]'>32°</span>
+            </div>
+        </div>
+    )
+}
+
+export default Card

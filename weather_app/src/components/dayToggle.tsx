@@ -1,6 +1,4 @@
 
-
-
 function DayToggle() {
     return (
         <div id="day-toggle" className="flex flex-row w-fit h-fit top-1.25 bottom-1.25 gap-6.5">
