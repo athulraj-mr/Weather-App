@@ -7,6 +7,7 @@ import DayToggle from './components/dayToggle'
 import Cards from './components/cards'
 import Today from './components/today'
 import TopOver from './components/topOver'
+import BottomOver from './components/bottomOver'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Cards />
           <Today />
           <TopOver />
+          <BottomOver />
         </div>
       </div>
     </div>
