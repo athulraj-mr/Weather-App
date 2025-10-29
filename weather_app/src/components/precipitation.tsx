@@ -26,7 +26,7 @@ function Precipitation() {
                         <span className="font-medium">20%</span>
                     </div>
                 </div>
-                <div id="group-26" className="w-122.25 h-25.875 relative">
+                <div id="group-26" className="w-122.25 h-25.875 relative md:w-fit">
                     <img src={vector1} alt="" className='w-52 lg:w-[486px] h-12.68 top-27.5 left-11 lg:top-10.5 lg:-left-px absolute'/>
                     <img src={vector2} alt="" className='w-52 lg:w-[486px] h-25.875 top-27.5 left-11 lg:top-10.5 absolute'/>
                 </div>
