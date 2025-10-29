@@ -22,8 +22,8 @@ function App() {
           <MinorInfo />
           <AddInfo />
         </div>
-        <div id='right-frame' className='flex flex-col font-plus gap-8 lg:gap-12.25 min-w-screen h-fit lg:w-234.5 lg:h-248.5
-          lg:rounded-[28px] lg:border border-[#FFFFFF1A] bg-[#CCCCCC1A] pl-7.5 pr-1.5 pt-10 lg:pr-11.75 pb-10 lg:pl-11.75 opacity-100'>
+        <div id='right-frame' className='flex flex-col font-plu w-screen gap-8 lg:gap-12.25 h-fit lg:w-234.5 lg:h-248.5
+          lg:rounded-[28px] lg:border border-[#FFFFFF1A] bg-[#CCCCCC1A] pt-10 lg:pr-11.75 pb-10 lg:pl-11.75 items-center'>
           <DayToggle />
           <Cards />
           <Today />

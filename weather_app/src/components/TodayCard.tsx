@@ -4,7 +4,7 @@ function TodayCard() {
     return (
         <div id="todaycard" className="flex flex-col w-67 h-55.25 rounded-[20px] justify-center top-3.75
             right-5 bottom-3.75 left-5 gap-2.5 bg-[#252222A6] shadow-[2px_4px_5px_0px_#00000040]">
-            <div id="air" className="w-32.75 h-9 flex flex-row items-center ml-5">
+            <div id="air" className="w-fit mt-5 lg:w-32.75 h-9 flex flex-row items-center ml-5">
                 <span className="font-medium text-[17px] leading-4.25 text-[#FFFFFF]">Air Quality Index</span>
             </div>
             <div id="frame-26" className="flex flex-row w-57 h-36.25 gap-2.5 ml-5 items-end">
