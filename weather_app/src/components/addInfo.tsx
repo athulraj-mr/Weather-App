@@ -5,7 +5,8 @@ import wind from '../assets/image/wind.png'
 function AddInfo() {
     return (
         <div id="addinfo" className="flex flex-row w-75 h-18 border mb-3 rounded-xl justify-between pr-2.5 pl-2.5 
-            lg:pl-3.75 lg:pr-3.75 border-[#0000001A] bg-[#252222A6] shadow-[2px_4px_5px_0px_#00000040] items-center md:mb-0 md:w-95 md:h-27.5 md:rounded-2xl lg:rounded-xl lg:w-85.25 lg:h-19.5">
+            lg:pl-3.75 lg:pr-3.75 border-[#0000001A] bg-[#252222A6] shadow-[2px_4px_5px_0px_#00000040] items-center
+             md:mb-0 md:w-95 md:h-27.5 md:rounded-2xl lg:rounded-xl lg:w-85.25 lg:h-19.5">
             <div id="frame-4" className="flex flex-row w-fit h-fit gap-2 items-center">
                 <div id="water" className="h-10 w-10 md:w-15.5 md:h-15.5 lg:w-11.75 lg:h-11.75">
                     <img src={water} alt="water-img" className='w-fit h-fit'/>
