@@ -4,12 +4,12 @@ import vector2 from '../assets/image/Vector 2.png'
 
 function Precipitation() {
     return (
-        <div id="precipitation" className="flex flex-col w-68 md:w-91 lg:w-[382px] lg:h-50 h-55.25 gap-1.25 bg-[#252222A6] rounded-[20px] shadow-[2px_4px_5px_0px_#00000040] relative">
-            <div id="title" className="flex flex-row pt-4 w-27 lg:w-50 max-h-16.5 top-0 md:top-2 md:left-2 lg:top-0 lg:left-1 lg:pt-5 gap-2.5 items-center absolute">
-                <span className="w-26.5 h-9 font-medium text-[14px] md:w-fit md:h-fit md:text-[20px] lg:text-[14px] lg:ml-3.5 lg:h-5 lg:leading-3.5 leading-9 ml-5 text-[#FFFFFF]">Precipitation</span>
+        <div id="precipitation" className="flex flex-col w-68 h-55.25 gap-1.25 bg-[#252222A6] rounded-[20px] shadow-[2px_4px_5px_0px_#00000040] relative md:w-91 lg:w-[382px] lg:h-50">
+            <div id="title" className="flex flex-row pt-4 w-27 gap-2.5 items-center absolute max-h-16.5 top-0 md:top-2 md:left-2 lg:top-0 lg:w-50 lg:left-1 lg:pt-5">
+                <span className="w-26.5 h-9 leading-9 ml-5 text-[#FFFFFF] font-medium text-[14px] md:w-fit md:h-fit md:text-[20px] lg:text-[14px] lg:ml-3.5 lg:h-5 lg:leading-3.5">Precipitation</span>
             </div>
             <div id="line-chart" className="flex flex-row max-w-[531px] h-32.75 gap-1.25 relative">
-                <div id="frame-19" className="flex flex-col max-w-5 ml-5 max-h-39.25 top-13 md:left-2 md:top-15.5 lg:ml-[11px] lg:top-[46px] text-[7px] leading-9 text-[#6A6969] justify-between absolute items-end">
+                <div id="frame-19" className="flex flex-col max-w-5 ml-5 max-h-39.25 top-13 text-[7px] leading-9 text-[#6A6969] justify-between absolute items-end md:left-2 md:top-15.5 lg:ml-[11px] lg:top-[46px]">
                     <div id="100" className="w-5 h-6.75">
                         <span className="font-medium">100%</span>
                     </div>
@@ -27,19 +27,19 @@ function Precipitation() {
                     </div>
                 </div>
                 <div id="group-26" className="w-122.25 h-25.875 relative md:w-85 lg:w-[322px]">
-                    <img src={vector1} alt="" className='w-52 md:w-72.5 lg:w-[322px] h-12.68 top-27 left-11 md:left-12 md:top-28.25 lg:top-[98px] lg:left-[43px] absolute'/>
-                    <img src={vector2} alt="" className='w-52 md:w-72.5 lg:w-[322px] h-25.875 top-27 left-11 md:left-12 md:top-28.25 lg:top-[98px] lg:left-[43px] absolute'/>
+                    <img src={vector1} alt="" className='w-52 top-27 h-12.68 left-11 md:w-72.5 md:left-12 md:top-28.25 lg:top-[98px] lg:left-[43px] lg:w-[322px] absolute'/>
+                    <img src={vector2} alt="" className='w-52 h-25.875 top-27 left-11 md:left-12 md:top-28.25 md:w-72.5 lg:w-[322px] lg:top-[98px] lg:left-[43px] absolute'/>
                 </div>
-                <div id='dotted' className='lg:w-[320px] h-27 ml-11 top-13 md:top-15.5 md:left-1.5 lg:top-12 lg:ml-[38px] absolute'>
-                    <div id='line-22' className='w-52 md:w-71.5 lg:w-[322px] h-0 top-4 border border-dashed border-[#6A696980] absolute'></div>
-                    <div id='line-21' className='w-52 md:w-71.5 lg:w-[322px] h-0 top-10.75 border border-dashed border-[#6A696980] absolute'></div>
-                    <div id='line-20' className='w-52 md:w-71.5 lg:w-[322px] h-0 top-17.75 border border-dashed border-[#6A696980] absolute'></div>
-                    <div id='line-19' className='w-52 md:w-71.5 lg:w-[322px] h-0 top-24.25 border border-dashed border-[#6A696980] absolute'></div>
-                    <div id='line-18' className='w-52 md:w-71.5 lg:w-[322px] h-0 top-31 border border-dashed border-[#6A696980] absolute'></div>
+                <div id='dotted' className='h-27 ml-11 top-13 md:top-15.5 md:left-1.5 lg:top-12 lg:ml-[38px] lg:w-[320px] absolute'>
+                    <div id='line-22' className='w-52 h-0 top-4 border border-dashed border-[#6A696980] md:w-71.5 lg:w-[322px] absolute'></div>
+                    <div id='line-21' className='w-52 h-0 top-10.75 border border-dashed border-[#6A696980] md:w-71.5 lg:w-[322px] absolute'></div>
+                    <div id='line-20' className='w-52 h-0 top-17.75 border border-dashed border-[#6A696980] md:w-71.5 lg:w-[322px] absolute'></div>
+                    <div id='line-19' className='w-52 h-0 top-24.25 border border-dashed border-[#6A696980] md:w-71.5 lg:w-[322px] absolute'></div>
+                    <div id='line-18' className='w-52 h-0 top-31 border border-dashed border-[#6A696980] md:w-71.5 lg:w-[322px] absolute'></div>
                 </div>
             </div>
-            <div id='frame-16' className='flex flex-row w-52 md:w-72 lg:w-[318px] max-h-2.25 lg:gap-7.5 ml-11 md:ml-12.5 
-                font-semibold text-[7px] leading-1.75 text-[#6A6969] justify-between md:top-48.5 top-45.75 lg:ml-[43px] lg:top-[180px] absolute'>
+            <div id='frame-16' className='flex flex-row w-52 max-h-2.25 ml-11 md:ml-12.5 md:top-48.5 md:w-72 lg:w-[318px] lg:gap-7.5 
+                font-semibold text-[7px] leading-1.75 text-[#6A6969] justify-between top-45.75 lg:ml-[43px] lg:top-[180px] absolute'>
                 <div className='w-7.75 h-2.25'>
                     <span className='h-fit w-fit'>10AM</span>
                 </div>
