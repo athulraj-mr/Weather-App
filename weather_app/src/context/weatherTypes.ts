@@ -1,3 +1,17 @@
+export interface ForecastDay {
+    date: string;
+    day: {
+        avgtemp_c: number;
+        condition: {
+            text: string;
+        };
+    };
+}
+
+export interface Forecast {
+    forecastday: ForecastDay[];
+}
+
 export interface weatherCondition {
     text: string;
 }
@@ -10,8 +24,12 @@ export interface weatherData {
     };
     current: {
         temp_c: number;
-        condition: weatherCondition
+        condition: weatherCondition;
+        feelslike_c: number;
+        humidity: number;
+        wind_kph: number
     };
+    forecast: Forecast;
 }
 
 export interface weatherState {

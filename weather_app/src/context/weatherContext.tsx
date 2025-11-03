@@ -39,7 +39,7 @@ export const WeatherProvider = ({ children }: { children: ReactNode }) => {
 
         try {
             const response = await axios.get<weatherData>(
-                `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`
+                `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`
             );
             dispatch({ type: 'fetch_Success', payload: response.data });
         } catch {
