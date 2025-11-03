@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "weather_app/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "weather_app/dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "weather_app/dist/$1"
+    }
+  ]
+}
