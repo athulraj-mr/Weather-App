@@ -8,8 +8,6 @@ function Search() {
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     if (!input.trim()) return;
-    console.log("Searching for:", input.trim());
-
 
     fetchWeather(input.trim())
     setInput('');

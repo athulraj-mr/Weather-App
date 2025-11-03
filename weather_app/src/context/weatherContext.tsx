@@ -1,4 +1,4 @@
-import { createContext, useReducer} from "react";
+import { createContext, useReducer, useEffect} from "react";
 import type { ReactNode } from "react";
 import type { weatherData, weatherAction, weatherState } from "./weatherTypes";
 import axios from "axios";
@@ -47,9 +47,12 @@ export const WeatherProvider = ({ children }: { children: ReactNode }) => {
                 type: 'fetch_Error', payload: 'City Not found'
             });
         }
-        console.log("Fetching weather for:", city);
 
     };
+
+    useEffect(() => {
+        fetchWeather('Kalpetta')
+    },[]);
 
     return (
         <WeatherContext.Provider value={{ state, fetchWeather}}>

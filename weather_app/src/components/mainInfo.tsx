@@ -1,6 +1,5 @@
-import { useWeather } from '../hooks/useWeather'
-import image from '../assets/image/logo1.png'
-
+import { logos } from '../data/weatherLogos';
+import { useWeather } from '../hooks/useWeather';
 
 function MainInfo() {
   const { state } = useWeather();
@@ -13,14 +12,17 @@ function MainInfo() {
 
   if (loading) return <p> Loading..</p>
   if (error) return <p>{error}</p>
-  if (!weather) return <p>Search a city to get weather</p>
+  if(!weather) return null;
 
+  const condition = weather.current.condition.text;
+
+  const logo = logos[condition] || logos['default'];
 
     return (
         <div id='main-info' className='flex flex-col w-fit h-fit gap-12.25 md:items-center lg:gap-7'>
             <div id='main-info-in' className='flex flex-col w-fit h-fit gap-5 justify-center items-center md:gap-8 lg:gap-7'>
               <div>
-                <img src={image} alt="main-info-weather-image" className='w-70.5 h-fit md:w-120 lg:w-50 lg:h-50'/>
+                <img src={logo} alt="weather-logo" className='w-70.5 h-fit md:w-120 lg:w-50 lg:h-50'/>
               </div>
               <div id='main-info-inner' className=' flex flex-row md:h-fit lg:w-51.25 lg:h-9 lg:justify-center'>
                 <span className='font-bold text-7xl text-[#FFFFFF] text-center md:text-8xl md:leading-8 lg:text-5xl lg:leading-9'>{Math.round(weather.current.temp_c)}<sup className='top-[-0.25em]'>°C</sup></span>
