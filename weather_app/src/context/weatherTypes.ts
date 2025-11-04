@@ -6,6 +6,10 @@ export interface ForecastDay {
             text: string;
         };
     };
+    astro: {
+        sunrise: string;
+        sunset: string;
+    };
 }
 
 export interface Forecast {
