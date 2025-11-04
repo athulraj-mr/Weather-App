@@ -10,8 +10,8 @@ function MainInfo() {
     return date.toLocaleDateString('en-US', { weekday: 'long'});
   };
 
-  if (loading) return <p> Loading..</p>
-  if (error) return <p>{error}</p>
+  if (loading) return <p className='w-fit h-fit text-[#ffffff]'> Loading..</p>
+  if (error) return <p className='w-fit h-fit text-[#ffffff]'>{error}</p>
   if(!weather) return null;
 
   const condition = weather.current.condition.text;

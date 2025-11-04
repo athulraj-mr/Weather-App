@@ -27,7 +27,9 @@ export interface weatherData {
         condition: weatherCondition;
         feelslike_c: number;
         humidity: number;
-        wind_kph: number
+        wind_kph: number;
+        uv: number;
+        pressure_mb: number
     };
     forecast: Forecast;
 }

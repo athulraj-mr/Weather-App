@@ -16,7 +16,7 @@ function App() {
   return (
     <WeatherProvider>
       <div id='outer' className='bg-[#191B1F] flex flex-col lg:p-3.75 lg:flex-row lg:w-full lg:min-h-screen lg:flex lg:justify-center lg:items-center'>
-        <div id='main-frame' className='flex flex-col lg:flex lg:flex-row lg:h-full lg:w-fit lg:gap-5'>
+        <div id='main-frame' className='flex flex-col lg:flex lg:flex-row lg:h-full lg:w-[1005px] lg:gap-5'>
           <div id='left-frame' className='flex flex-col h-fit items-center font-plus border-[#FFFFFF1A] bg-[#CCCCCC1A] gap-8 pt-7 md:gap-10 md:pt-14 
             lg:gap-[35px] lg:w-1/3 lg:h-full lg:rounded-2xl lg:border lg:pt-10 lg:pr-9.75 lg:pb-10 lg:pl-9.75'>
               <Search />
