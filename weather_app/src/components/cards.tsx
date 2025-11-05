@@ -5,9 +5,9 @@ import Card from "./card"
 
 const Cards = () => {
     const { state } = useWeather();
-    const { weather } = state;
+    const { weather, error, loading } = state;
 
-    if(!weather) return null;
+    if(!weather || error || loading) return null;
 
     const forecastDays = weather.forecast.forecastday;
 
@@ -26,10 +26,10 @@ const Cards = () => {
 
                 return (
                     <Card
-                        key = {index}
-                        day = {dayName}
-                        temp = {temp}
-                        logo = {logo}
+                        key = { index }
+                        day = { dayName }
+                        temp = { temp }
+                        logo = { logo }
                      />
                 )
             })}

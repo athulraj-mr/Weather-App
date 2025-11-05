@@ -33,7 +33,8 @@ export interface weatherData {
         humidity: number;
         wind_kph: number;
         uv: number;
-        pressure_mb: number
+        pressure_mb: number;
+        vis_km: number
     };
     forecast: Forecast;
 }
