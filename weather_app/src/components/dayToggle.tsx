@@ -1,5 +1,6 @@
 
 function DayToggle() {
+
     return (
         <div id="day-toggle" className="flex flex-row w-fit h-fit gap-4 md:gap-8 md:w-73.5 md:justify-center lg:ml-0 lg:gap-1 lg:justify-start">
             <span className="w-17.75 h-7.5 font-semibold text-[20px] leading-6 text-[#FFFFFF80] md:text-3xl md:w-22 lg:text-[22px]">Today</span>

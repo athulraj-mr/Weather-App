@@ -10,7 +10,7 @@ function MainInfo() {
     return date.toLocaleDateString('en-US', { weekday: 'long'});
   };
 
-  if (loading) return <p className='w-fit h-fit text-[#ffffff]'> Loading..</p>
+  if(loading) return <p className='w-fit h-fit text-[#ffffff] text-2xl'> Loading...</p>;
   if (error) return <p className='w-fit h-fit text-[#ffffff]'>{error}</p>
   if(!weather) return null;
 
@@ -29,9 +29,9 @@ function MainInfo() {
               </div>
             </div>
             <div id='frame-2' className='flex flex-row justify-between w-70 h-fit 
-              border-b border-[#C2D4D3] md:pt-2 md:w-90.5 lg:px-1.25 lg:py-5 lg:w-[260px] lg:pb-0'>
-              <span className='text-[20px] h-7 text-[#ffffff] font-normal md:text-2xl md:h-9 lg:w-40 lg:h-9 lg:text-[20px] lg:leading-5'>{weather.location.name}</span>
-              <span className='text-[20px] h-7 text-[#ffffff] font-normal text-right md:text-2xl md:h-9 lg:w-24 lg:h-9 lg:text-[20px] lg:leading-5'>{getDay(weather.location.localtime)}</span>
+              border-b border-[#C2D4D3] md:pt-2 md:w-90.5 lg:px-1.25 lg:py-5 lg:w-fit lg:gap-7 lg:pb-0'>
+              <span className='text-[20px] h-7 text-[#ffffff] font-normal md:text-2xl md:h-9 lg:w-fit lg:h-fit lg:text-[20px] lg:leading-5 lg:pb-4'>{weather.location.name}</span>
+              <span className='text-[20px] h-7 text-[#ffffff] font-normal text-right md:text-2xl md:h-9 lg:w-fit lg:h-fit lg:text-[20px] lg:leading-5 lg:pb-4'>{getDay(weather.location.localtime)}</span>
             </div>
         </div>
     )

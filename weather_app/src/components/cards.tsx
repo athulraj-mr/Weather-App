@@ -5,9 +5,10 @@ import Card from "./card"
 
 const Cards = () => {
     const { state } = useWeather();
-    const { weather, error, loading } = state;
+    const { weather, loading, error } = state;
 
-    if(!weather || error || loading) return null;
+    if(loading) return <p className='w-fit h-fit text-[#ffffff] text-2xl'> Loading...</p>;
+    if( !weather || error ) return null;
 
     const forecastDays = weather.forecast.forecastday;
 

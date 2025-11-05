@@ -20,11 +20,11 @@ const WeatherContext = createContext <{
 const weatherReducer = (state: weatherState, action: weatherAction): weatherState => {
     switch (action.type) {
         case 'fetch_Start':
-            return { ...state, loading:true, error:null};
+            return { ...state, loading:true, error:null };
         case 'fetch_Success':
-            return { ...state, loading:false, weather: action.payload };
+            return { loading:false, weather: action.payload, error:null };
         case 'fetch_Error':
-            return { ...state, loading: false, error: action.payload, weather: null};
+            return { loading: false, error: action.payload, weather: state.weather };
         default:
             return state;
     }

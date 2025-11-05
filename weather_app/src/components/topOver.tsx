@@ -7,9 +7,9 @@ import pressureIcon from '../assets/image/barometer.png'
 
 function TopOver() {
     const { state } = useWeather();
-    const { weather, loading, error } = state;
+    const { weather, error, loading } = state;
 
-    if (loading || error || !weather) return null;
+    if ( error || !weather || loading ) return null;
 
     const visibility = weather.current.vis_km;
     const visibilityStatus = visibility >= 6 ? 'Good' : visibility >= 4 ? 'Moderate' : 'Poor';

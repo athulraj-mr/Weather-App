@@ -6,10 +6,9 @@ import { useWeather } from '../hooks/useWeather'
 function AddInfo() {
 
     const { state } = useWeather();
-    const { weather, loading, error } = state;
+    const { weather, error, loading } = state;
 
-    if(loading) return null;
-    if(!weather || error ) return null;
+    if(!weather || error || loading ) return null;
 
     const Humidity = Math.round(weather.current.humidity);
     const windSpeed = Math.round(weather.current.wind_kph);

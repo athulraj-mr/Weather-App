@@ -5,9 +5,9 @@ import { useWeather } from '../hooks/useWeather'
 function Sun() {
 
     const { state } = useWeather();
-    const { weather, loading, error } = state;
+    const { weather, error } = state;
 
-    if (!weather || loading || error) return null;
+    if (!weather || error) return null;
 
     const { sunrise: riseTime, sunset: setTime } = weather.forecast.forecastday[0].astro;
 

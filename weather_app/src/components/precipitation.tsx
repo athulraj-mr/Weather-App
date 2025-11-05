@@ -3,6 +3,7 @@ import vector2 from '../assets/image/Vector 2.png'
 
 
 function Precipitation() {
+
     return (
         <div id="precipitation" className="flex flex-col w-68 h-55.25 gap-1.25 bg-[#252222A6] rounded-[20px] shadow-[2px_4px_5px_0px_#00000040] relative md:w-91 lg:w-[382px] lg:h-50">
             <div id="title" className="flex flex-row pt-4 w-27 gap-2.5 items-center absolute max-h-16.5 top-0 md:top-2 md:left-2 lg:top-0 lg:w-50 lg:left-1 lg:pt-5">

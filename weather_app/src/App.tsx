@@ -26,11 +26,11 @@ function App() {
           </div>
           <div id='right-frame' className='flex flex-col font-plus items-center gap-8 border-[#FFFFFF1A] bg-[#CCCCCC1A] h-fit pt-10 pb-10 md:pb-14 lg:gap-6.25 lg:w-2/3 lg:h-fit
             lg:rounded-[28px] lg:border lg:pl-7 lg:pb-4 lg:items-start'>
-            <DayToggle />
-            <Cards />
-            <Today />
-            <TopOver />
-            <BottomOver />
+              <DayToggle />
+              <Cards />
+              <Today />
+              <TopOver />
+              <BottomOver />
           </div>
         </div>
       </div>

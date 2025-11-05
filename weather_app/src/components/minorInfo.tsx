@@ -9,8 +9,7 @@ function MinorInfo() {
   const { state } = useWeather();
   const { weather, loading, error } = state;
 
-  if(loading) return null;
-  if(error || !weather) return null;
+  if(loading || error || !weather) return null;
 
   const conditionText = weather.current.condition.text;
   const minTemp = Math.round(weather.current.feelslike_c);
