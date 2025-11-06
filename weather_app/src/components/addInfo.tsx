@@ -1,5 +1,5 @@
-import water from '../assets/image/water.png'
-import wind from '../assets/image/wind.png'
+import water from '../assets/image/water.svg'
+import wind from '../assets/image/wind.svg'
 import { useWeather } from '../hooks/useWeather'
 
 

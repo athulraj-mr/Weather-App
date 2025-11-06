@@ -1,6 +1,6 @@
-import icon1 from '../assets/image/Icon1.png'
-import temp from '../assets/image/temp.png'
-import temp2 from '../assets/image/temp2.png'
+import icon1 from '../assets/image/rainIcon.svg'
+import temp from '../assets/image/temp.svg'
+import temp2 from '../assets/image/temp2.svg'
 import { useWeather } from '../hooks/useWeather'
 
 

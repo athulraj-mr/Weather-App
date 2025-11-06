@@ -1,8 +1,8 @@
 import { useWeather } from "../hooks/useWeather"
 import TodayCard from "./TodayCard"
-import visibilityIcon from '../assets/image/air-pollution.png'
-import uvIcon from '../assets/image/uv.png'
-import pressureIcon from '../assets/image/barometer.png'
+import visibilityIcon from '../assets/image/air-pollution.svg'
+import uvIcon from '../assets/image/uv.svg'
+import pressureIcon from '../assets/image/barometer.svg'
 
 
 function TopOver() {

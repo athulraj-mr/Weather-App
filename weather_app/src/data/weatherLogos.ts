@@ -1,13 +1,13 @@
-import cloudyRainLogo from '../assets/image/logos/cloudy-rain.png'
-import cloudyLogo from '../assets/image/logos/cloudy.png'
-import rainNightLogo from '../assets/image/logos/rain-night.png'
-import rainLogo from '../assets/image/logos/rain.png'
-import starMoonLogo from '../assets/image/logos/star-moon.png'
-import sunnyLogo from '../assets/image/logos/sunny.png'
-import thunderStormLogo from '../assets/image/logos/thunderstorm.png'
-import windNightLogo from '../assets/image/logos/wind-night.png'
-import windSunnyLogo from '../assets/image/logos/wind-sunny.png'
-import windCloudyLogo from '../assets/image/logos/windy-cloud.png'
+import cloudyRainLogo from '../assets/svg/cloudy-rain.svg'
+import cloudyLogo from '../assets/svg/cloudy.svg'
+import rainNightLogo from '../assets/svg/rain-night.svg'
+import rainLogo from '../assets/svg/rain.svg'
+import starMoonLogo from '../assets/svg/star-moon.svg'
+import sunnyLogo from '../assets/svg/sunny.svg'
+import thunderStormLogo from '../assets/svg/thunderstrom.svg'
+import windNightLogo from '../assets/svg/wind-night.svg'
+import windSunnyLogo from '../assets/svg/wind-sunny.svg'
+import windCloudyLogo from '../assets/svg/windy-cloud.svg'
 
 export const logos: { [key: string]: string } = {
     Sunny: sunnyLogo,

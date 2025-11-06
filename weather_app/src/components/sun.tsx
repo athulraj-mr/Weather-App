@@ -1,5 +1,5 @@
-import sunriseIcon from '../assets/image/sun-rise.png'
-import sunsetIcon from '../assets/image/sunset.png'
+import sunriseIcon from '../assets/image/sun-rise.svg'
+import sunsetIcon from '../assets/image/sun-set.svg'
 import { useWeather } from '../hooks/useWeather'
 
 function Sun() {
